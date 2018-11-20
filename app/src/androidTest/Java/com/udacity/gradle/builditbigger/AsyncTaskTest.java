@@ -19,11 +19,11 @@ import com.udacity.gradle.builditbigger.R;
 @RunWith(AndroidJUnit4.class)
 public class AsyncTaskTest {
     @Rule
-    ActivityTestRule<MainActivity> activityTestRule = new ActivityTestRule<>(MainActivity.class);
+  public   ActivityTestRule<MainActivity> activityTestRule = new ActivityTestRule<>(MainActivity.class);
      @Test
     public void asyncTaskValidation(){
-         Espresso.onView(withId(R.id.jokeButton)).check(matches( isDisplayed()));    //.perform(click());
-     //    Espresso.onView(withId(R.id.joke_tv)).check(matches(not(withText("Error"))));
+         Espresso.onView(withId(R.id.jokeButton)).perform(click());    //.perform(click());
+        Espresso.onView(withId(R.id.joke_tv)).check(matches(not(withText("Error"))));
 
     }
 }
