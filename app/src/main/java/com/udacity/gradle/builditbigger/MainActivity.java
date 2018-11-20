@@ -10,7 +10,6 @@ import android.view.View;
 
 
 
-
 import bebo.myjoketeller.JokeTellerActivity;
 
 

@@ -8,6 +8,8 @@ import android.view.ViewGroup;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+import com.udacity.gradle.builditbigger.MainActivity;
 import com.udacity.gradle.builditbigger.R;
 
 
@@ -24,6 +26,7 @@ public class MainActivityFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.fragment_main, container, false);
+      //  MobileAds.initialize(getContext(),"ca-app-pub-3954911785359391~6183917249");
 
         AdView mAdView = (AdView) root.findViewById(R.id.adView);
         // Create an ad request. Check logcat output for the hashed device ID to
